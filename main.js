@@ -54,12 +54,25 @@ document.querySelectorAll('section, .service-card, .portfolio-item, .section-tit
   observer.observe(el);
 });
 
-// Simple form handler (mock)
+// Form handler with Mailto
 const form = document.querySelector('form');
 if (form) {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    alert('Thank you for your message! I will get back to you soon.');
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    const subject = `Portfolio Inquiry from ${name}`;
+    const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+
+    const mailtoLink = `mailto:tuanlv.zons@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
+
+    // Optional: Show a feedback message
+    alert('Opening your email client to send the message...');
     form.reset();
   });
 }

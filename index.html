@@ -23,7 +23,7 @@
           <ul class="nav-links">
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#profile">About</a></li>
             <li><a href="#contact" class="btn btn-primary">Book a Call</a></li>
           </ul>
         </nav>
@@ -46,8 +46,63 @@
         </div>
       </section>
 
+      <!-- Personal CV / Profile Section -->
+      <section id="profile" class="section-padding" style="background: var(--bg-color);">
+        <div class="container">
+          <div class="profile-grid">
+            <div class="profile-image-wrapper">
+              <img src="./avatar2.png" alt="Profile Avatar" class="profile-avatar">
+              <div class="experience-badge">
+                <span class="years">5+</span>
+                <span class="text">Years<br>Exp.</span>
+              </div>
+            </div>
+            <div class="profile-content">
+              <div class="section-title" style="text-align: left; margin-bottom: 30px;">
+                <h2>About Me</h2>
+                <p>Full-stack developer specialized in Shopify & AI Agentic solutions.</p>
+              </div>
+              
+              <div class="tech-stack-grid">
+                <div class="stack-category">
+                  <h4>Backend</h4>
+                  <div class="stack-tags">
+                    <span class="stack-tag">Node.js</span>
+                    <span class="stack-tag">Python</span>
+                  </div>
+                </div>
+                
+                <div class="stack-category">
+                  <h4>Front End</h4>
+                  <div class="stack-tags">
+                    <span class="stack-tag">React</span>
+                    <span class="stack-tag">Vue</span>
+                  </div>
+                </div>
+
+                <div class="stack-category">
+                  <h4>AI Agentic</h4>
+                  <div class="stack-tags">
+                    <span class="stack-tag">LangChain</span>
+                    <span class="stack-tag">LangGraph</span>
+                    <span class="stack-tag">CrewAI</span>
+                  </div>
+                </div>
+
+                <div class="stack-category">
+                  <h4>Shopify</h4>
+                  <div class="stack-tags">
+                    <span class="stack-tag">Liquid</span>
+                    <span class="stack-tag">TypeScript</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- About / Positioning Section -->
-      <section id="about" class="section-padding">
+      <section id="about" class="section-padding" style="background: var(--bg-card);">
         <div class="container">
           <div class="section-title">
             <h2>Shopify Conversion Partner</h2>
@@ -76,8 +131,8 @@
             <div class="service-card">
               <div class="service-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  <path d="M12 20h9"></path>
+                  <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
                 </svg>
               </div>
               <h3>Conversion Psychology</h3>
@@ -88,7 +143,7 @@
       </section>
 
       <!-- Portfolio Section -->
-      <section id="portfolio" class="services section-padding" style="background: var(--bg-card);">
+      <section id="portfolio" class="services section-padding" style="background: var(--bg-color);">
         <div class="container">
           <div class="section-title">
             <h2>Case Studies</h2>
@@ -157,7 +212,7 @@
       </section>
 
       <!-- Services Section -->
-      <section class="section-padding" id="services">
+      <section class="section-padding" id="services" style="background: var(--bg-card);">
         <div class="container">
           <div class="section-title">
             <h2>Service Packages</h2>
@@ -184,23 +239,23 @@
                 <li>Advanced App Integration</li>
                 <li>SEO & Speed Optimization</li>
               </ul>
-              <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: auto;">Build My Brand</a>
+              <a href="#contact" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: auto;">Build Your Brand</a>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" class="section-padding" style="background: var(--bg-card);">
+      <section id="contact" class="section-padding" style="background: var(--bg-color);">
         <div class="container" style="text-align: center; max-width: 600px;">
           <div class="section-title">
             <h2>Ready To Scale?</h2>
             <p>Let's discuss your project and how I can help you succeed.</p>
           </div>
           <form style="text-align: left; display: grid; gap: 20px;">
-            <input type="text" placeholder="Your Name" style="width: 100%; padding: 15px; background: var(--bg-color); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 8px;">
-            <input type="email" placeholder="Your Email" style="width: 100%; padding: 15px; background: var(--bg-color); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 8px;">
-            <textarea placeholder="Tell me about your project" rows="5" style="width: 100%; padding: 15px; background: var(--bg-color); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 8px;"></textarea>
+            <input type="text" id="name" placeholder="Your Name" style="width: 100%; padding: 15px; background: var(--bg-color); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 8px;">
+            <input type="email" id="email" placeholder="Your Email" style="width: 100%; padding: 15px; background: var(--bg-color); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 8px;">
+            <textarea id="message" placeholder="Tell me about your project" rows="5" style="width: 100%; padding: 15px; background: var(--bg-color); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 8px;"></textarea>
             <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
           </form>
         </div>
